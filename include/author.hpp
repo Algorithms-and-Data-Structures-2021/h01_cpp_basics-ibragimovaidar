@@ -32,6 +32,8 @@ struct Author {
   Sex GetSex() const;
   const std::string &GetFullName() const;
 
+  bool equals(Author author);
+
   // === необходимо для тестов ===
   Author() = default;
   virtual ~Author() = default;
